@@ -1,0 +1,312 @@
+body{
+  font-family: 'Source Code Pro', monospace;
+  background-color: rgb(61, 60, 60);
+  color: rgb(255, 255, 255);
+  background-image: url(./imagenes/fondobody.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2{
+  font-size: 50px;
+  line-height: 50px;
+  margin: 1px;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+p{
+  text-align: justify;
+  
+}
+
+i{
+  font-size: 50px;
+}
+
+li{
+  float: left;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+
+nav {
+  font-size: 17px;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  left: 0;
+  width: 319px;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  margin-top: 40px;
+  
+}
+
+nav a {
+  position: relative;
+  width: 33.333%;
+  display: table-cell;
+  text-align: center;
+  color: #949494;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  transition: 0.2s ease color;
+}
+
+nav a:before,
+nav a:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.2s ease transform;
+}
+
+nav a:before {
+  top: 0;
+  left: 10px;
+  width: 6px;
+  height: 6px;
+}
+
+nav a:after {
+  top: 5px;
+  left: 18px;
+  width: 4px;
+  height: 4px;
+}
+
+nav a:nth-child(1):before {
+  background-color: yellow;
+}
+
+nav a:nth-child(1):after {
+  background-color: red;
+}
+
+nav a:nth-child(2):before {
+  background-color: #00e2ff;
+}
+
+nav a:nth-child(2):after {
+  background-color: #89ff00;
+}
+
+nav a:nth-child(3):before {
+  background-color: purple;
+}
+
+nav a:nth-child(3):after {
+  background-color: palevioletred;
+}
+
+#indicator {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.2s ease left;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a:hover:before,
+nav a:hover:after {
+  transform: scale(1);
+}
+
+nav a:nth-child(1):hover ~ #indicator {
+  background: linear-gradient(130deg, yellow, red);
+}
+
+nav a:nth-child(2):hover ~ #indicator {
+  left: 34%;
+  background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+nav a:nth-child(3):hover ~ #indicator {
+  left: 70%;
+  background: linear-gradient(130deg, purple, palevioletred);
+}
+
+
+#inge{
+  font-size: 20px;
+  color: rgb(255, 243, 243);
+  margin-top: 1px;
+  margin-bottom: 1px;
+  
+}
+
+.seccion{
+  padding: 10px 100px 10px 100px;
+}
+
+#socialmedia{
+  list-style: none;
+  margin-top: 30px ;
+  margin-bottom: 30px;
+  padding-left: 0px;
+}
+
+:any-link{
+  color: #ffffff;
+}
+
+#inicio{
+  background-image: url(./imagenes/iniciofondo.jpg);
+  padding-top: 90px;
+  padding-bottom: 90px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.divisor{
+  border-top: 2px solid #7305a2;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+.portfolio{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #d38defd9 40%, #a567f7 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+#exp{
+  background-image: url(./imagenes/fondoskills.jpg);
+  color: #333;
+  padding-top: 20px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300;
+  margin-left: 10px;
+  margin-right: 10px; 
+}
+
+.yoimg{
+  float: left;
+  padding: 10px 20px 10px 10px;
+}
+#sobremii{
+  padding: 10px 10px 20px 20px;
+}
+
