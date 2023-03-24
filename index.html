@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Mi primera pagina</title>
+        <title>Alan Juarez</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,106 +14,161 @@
     </head>
     <body>
     <div>
-        <header>
-            <nav id="navbar">
-                <a href="#inicio">Home</a>
-                <a href="#portfolio">Portafolio</a>
-                <a href="#exp">Experiencia</a>
-                <div id="indicator"></div>
-            </nav>
-        </header>
-    </div>
-    <div class="seccion" id="inicio">
+
+      <!--navbar-->
+      <body>
+
+        <nav id="navbar-example2" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top px-3 mb-3">
+          <a class="navbar-brand" href="#">
+            <img src="./imagenes/logo-a.png" alt="logo-a" width="50" height="44"> 
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div  class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading4">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      
+        <!-- El resto del contenido de la página va aquí -->
+   
+    <!--inicio con redes sociales-->
+    <div class="seccion inicio"  id="scrollspyHeading1">
         <h2>Alan Juarez</h2>
         <h3 id="inge">Ingeniero en sistemas computacionales.</h3>
         <div>
             <ul id="socialmedia" style="width: 200px;">
-                <li><a href="https://www.instagram.com/alanjg_/"><i class="fa-brands fa-instagram"></i></li></a>
-                <li><a href="https://twitter.com/AlanJG_"><i class="fa-brands fa-twitter"></i></li></a>
-                <li><a href="https://github.com/Magicjg"><i class="fa-brands fa-github"></i></li></a>
+                <li class="socialicon"><a href="https://www.instagram.com/alanjg_/"><i class="fa-brands fa-instagram"></i></li></a>
+                <li class="socialicon"><a href="https://twitter.com/AlanJG_"><i class="fa-brands fa-twitter"></i></li></a>
+                <li class="socialicon"><a href="https://github.com/Magicjg"><i class="fa-brands fa-github"></i></li></a>
              </ul>
         </div>
     </div>
-        
+
+    <!--seccion sobre mi-->  
     <div id="sobremi" class="seccion">
         <h2  id="sobremii">Sobre mi</h2>
-        <img src="./imagenes/like.PNG" alt="Foto Alan Juarez" class="yoimg">
-        <p>Mi nombre es <strong>Alan Juarez</strong> soy un egresado de la carrera de ingenieria en sistemas computacionales, un apacionado de las nuevas tecnologias emergentes que dia a dia se encuentran en evolucion. El aprender y enseñar es uno de mis objetivos en la vida para lograr la mejora continua y conseguir traspasar el conocimiento a nuevas generaciones.</p>
+        <img src="./imagenes/like.PNG"  alt="Foto Alan Juarez" class="yoimg">
+        <p>Mi nombre es <strong>Alan Juarez</strong> soy un egresado de la carrera de ingenieria en sistemas computacionales en la Universidad Tecnologica de México, un apacionado de las nuevas tecnologias emergentes que dia a dia se encuentran en evolucion. El aprender y enseñar es uno de mis objetivos en la vida para lograr la mejora continua y conseguir traspasar el conocimiento a nuevas generaciones.</p>
         <p>Me defino como una persona creativa con ganas de aprender y expandir el conocimiento.</p>
     </div>
-    
-   
-    <div class="divisor" class="seccion" id="portfolio">
-        <h2 class="h-100 d-flex align-items-center justify-content-center">Portfolio</h2>
-        <h3 class="h-100 d-flex align-items-center justify-content-center">Algunos de mis proyectos</h3>
-        <ul class="cards">
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
-              <div class="card_content">
-                <h2 class="card_title">Entornos</h2>
-                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                <button class="btn card_btn">Read More</button>
-              </div>
+
+    <!--divisor-->
+    <div class="divisor" id="scrollspyHeading2"></div>
+
+    <!--titulo portafolio-->
+    <h2 class="h-100 d-flex align-items-center justify-content-center">Portfolio</h2>
+    <h3 class="h-100 d-flex align-items-center justify-content-center">Algunos de mis proyectos</h3>
+
+    <!--proyectos de portafolio-->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagenes/arch.png" class="card-img-top" alt="arch linux">
+          <div class="card-body">
+            <h5 class="card-title">Entornos</h5>
+            <p class="card-text">Entorno personal de escritorio en Arch Linux utlilizando Qtile coordinado con otros softwares para lograr un buen uso.</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-dark" type="button"><a href="https://github.com/Magicjg/Arch-config">Saber mas</a></button>
             </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
-              <div class="card_content">
-                <h2 class="card_title">Python</h2>
-                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                <button class="btn card_btn">Read More</button>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
-              <div class="card_content">
-                <h2 class="card_title">Bash/Shell</h2>
-                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                <button class="btn card_btn">Read More</button>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
-              <div class="card_content">
-                <h2 class="card_title">HTML / CSS</h2>
-                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                <button class="btn card_btn">Read More</button>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
-              <div class="card_content">
-                <h2 class="card_title">Card Grid Layout</h2>
-                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                <button class="btn card_btn">Read More</button>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
-              <div class="card_content">
-                <h2 class="card_title">Card Grid Layout</h2>
-                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                <button class="btn card_btn">Read More</button>
-              </div>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
-    
-    <div id="exp" class="seccion">
-        <h2>Eperiencia & Skills</h2>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagenes/bash-logo.jpg" class="card-img-top" alt="bash-logo">
+          <div class="card-body">
+            <h5 class="card-title">Bash/Shell</h5>
+            <p class="card-text">Programa escrito en shell para actualizacion de sistemas Linux basados en gestor de archivos apt.</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-dark" type="button"><a href="https://github.com/Magicjg/BashUpdate">Saber mas</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagenes/pyhton.png" class="card-img-top" alt="phyton-logo">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Demostracion de programacion basica de Pyhton creando un juego de consola de Pokemon basico con jugabilidad tipo snake.</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-dark" type="button"><a href="https://github.com/Magicjg/Pokemon-Basico">Saber mas</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagenes/html-css.png" class="card-img-top" alt="html-css">
+          <div class="card-body">
+            <h5 class="card-title">HTML/CSS</h5>
+            <p class="card-text">Creacion de esta pagina como curriculum y portafolio personal.</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-dark" type="button"><a href="https://github.com/Magicjg/Magicjg.github.io">Saber mas</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-   
+
+    <!--experiencia header-->
+    <div id="scrollspyHeading3" class="seccion exp">
+        <h2>Exeriencia, Skills y Habilidades.</h2>
+        <p>He adquirido varios conocimientos en mulriples ramas de la tecnologia.</p>
+    </div>
+
+    <!--erxperiencia texto-->
+    <div class="textexp" >
+      <h3 class="exptext"><u>Experiencia</u></h3>
+        <p>• 10 de Febrero del 2020 - 30 de Mayo del 2020 <br> Analista de Infraestructura en Fin común <br> Monitoreo de site, gestión de equipos en site, respaldos de VM, cableado estructurado y creación de página web</p>
+        <P>• 22 deMarzo del 2022 - 22 de Sepriembre del 2022 <br> Personal de apoyo a personal docente en UNITEC <br> Préstamo y recepción de equipo audiovisual, mantenimiento, configuración y reparación de equipo audiovisual, gestión de inventarios de papelería y de equipo electrónico</P>
+      <h3 class="exptext" ><u>Idiomas</u></h3>
+        <p>• Español – nativo</p> 
+        <p>• Ingles americano - intermedio</p>
+      <h3 class="exptext"><u>Conocimientos</u></h3>
+        <p>• Conocimiento en Word, Excel, Power Point y Microsoft Teams.</p>
+        <p>• Conocimientos básicos de PowerBI.</p>
+        <p>• Conocimientos intermedios de programación en C#, C++, Python, Bash, Html y css.</p>
+        <p>• Conocimientos intermedios en base de datos ORACLE.</p>
+        <p>• Conocimientos avanzados en sistemas computacionales. </p>
+        <p>• Conocimiento intermedio en redes CISCO. </p>
+        <p>• Conocimientos en cableado estructurado de redes informáticas.</p>
+        <p>• Manejo general de sistemas Linux y Windows.</p>
+      <h3 class="exptext"><u>Habilidades y Capacidades</u></h3>
+        <p>• Búsqueda de información para solución de problemas.</p>
+        <p>• Trabajo bajo presión y Trabajo en equipo.</p>
+        <p>• Capacidad de aprendizaje y decisión.</p>
+        <p>• Capacidad de dialogo</p>
+        <p>• Adaptación al manejo de diferentes softwares </p>
+        <p>• Buen manejo en los tiempos de cada tarea juicio y toma de decisiones.</p>
+        <p>• Inteligencia emocional.</p>
+        <p>• Orientación de servicio.  * Empatía y tolerancia</p>
+
+      </div>
+      <!--contacto-->
+   <div id="scrollspyHeading4" class="divisor contacto">
+    <h2>Contacto</h2>
+    <p class="contacto">alan.juarezgo@outlook.com<br><a href="https://www.instagram.com/alanjg_/ ">Instagram</a><br><a href="https://twitter.com/AlanJG_">Twitter</a><br><a href="https://www.linkedin.com/in/alan-juarez-254735259/">Linkedin</a></p>
+    
+    
+   </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     </body>
 </html>
