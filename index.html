@@ -1,20 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>¿Quieres ser mi San Valentin?</title>
+    <title>¿Quieres ser mi San Valentín?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe4e1;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .boton {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #si {
+            background-color: #ff69b4;
+            color: white;
+        }
+        #no {
+            background-color: #ff6347;
+            color: white;
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="tenor-gif-embed" data-postid="2871482820979272488" data-share-method="host" data-aspect-ratio="1.28351" data-width="100%"><a href="https://tenor.com/view/mochi-pet-mochi-cat-cute-squiddy-gif-2871482820979272488">Mochi Pet GIF</a>from <a href="https://tenor.com/search/mochi-gifs">Mochi GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-        <h1>¿Quieres ser mi San Valentin? 🥰</h1>
-        <p>Eres la persona mas especial del mundo</p>
-        <div class="btn">
-            <a href="si.html">SI</a>
-            <a href="no1.html">NO</a>
-        </div>
+        <h1>¿Quieres ser mi San Valentín? 💖</h1>
+        <img src="https://i.imgur.com/Zh4r0Bq.png" alt="Imagen tierna" width="200">
+        <br><br>
+        <button id="si" class="boton">Sí</button>
+        <button id="no" class="boton">No</button>
     </div>
+
+    <script>
+        const noBtn = document.getElementById("no");
+        const siBtn = document.getElementById("si");
+        const preguntas = ["¿Segura? 😢", "¿De verdad? 🥺", "¿No lo piensas otra vez? 💔", "Última oportunidad... 😭"];
+        let contador = 0;
+        
+        noBtn.addEventListener("mouseover", () => {
+            const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
+            const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
+            noBtn.style.left = `${x}px`;
+            noBtn.style.top = `${y}px`;
+            noBtn.textContent = preguntas[contador % preguntas.length];
+            contador++;
+        });
+        
+        siBtn.addEventListener("click", () => {
+            document.body.innerHTML = "<h1>¡Sabía que dirías que sí! 💕</h1><img src='https://i.imgur.com/4PSTp7A.gif' width='300'>";
+        });
+    </script>
 </body>
 </html>
+
